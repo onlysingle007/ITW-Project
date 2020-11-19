@@ -45,21 +45,21 @@ def rps():
     
     #print the selected choise
     if c_c=="R":
-        print("\nComputer choise: ROCK")
+        print("\nComputer chose: ROCK")
     if c_c=="P":
-        print("\nComputer choise: PAPER")
+        print("\nComputer chose: PAPER")
     if c_c=="S":
-        print("\nComputer choise: SCISSORS")
+        print("\nComputer chose: SCISSORS")
     if p_c=="R":
-        print("You choise: ROCK")
+        print("You chose: ROCK")
     if p_c=="P":
-        print("You choise: PAPER")
+        print("You chose: PAPER")
     if p_c=="S":
-        print("You choise: SCISSORS")
+        print("You chose: SCISSORS")
     
     #same choice
     if p_c==c_c:
-        print("Both you and computer choose same so no one gets a point")
+        print("Both you and computer chose same so no one gets a point")
     
     #user choose ROCK
     if p_c=="R":
@@ -256,7 +256,7 @@ def hangman():
     play(word)
     
     #asking to play again
-    while input("Press \"Y\" to play again or Enter anything else to exit :").upper() == "y":
+    while input("Press \"Y\" to play again or Enter anything else to exit :").upper() == "Y":
         word = get_word(word_list)
         play(word)
  
@@ -275,5 +275,5 @@ while True:
         hangman()
         
     else:
-        print("Exiting")
+        print("\nExiting...")
         break
