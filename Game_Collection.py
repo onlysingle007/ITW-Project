@@ -61,7 +61,7 @@ def rps():
     if p_c==c_c:
         print("Both you and computer chose same so no one gets a point")
     
-    #user choose ROCK
+    #user chose ROCK
     if p_c=="R":
         if c_c=="P":
             print("Computer won")
@@ -70,7 +70,7 @@ def rps():
             print("You won")
             p_s=p_s+1
     
-    #user choose PAPER
+    #user chose PAPER
     if p_c=="P":
         if c_c=="S":
             print("Computer won")
@@ -79,12 +79,12 @@ def rps():
             print("You won")
             p_s=p_s+1
     
-    #user choose SCISSORS
+    #user chose SCISSORS
     if p_c=="S":
         if c_c=="R":
             print("Computer won")
             c_s=c_s+1
-        elif c_s=="P":
+        elif c_c=="P":
             print("You won")
             p_s=p_s+1
     
@@ -92,7 +92,7 @@ def rps():
     print("\nComputer score:",c_s,"\nYour score:",p_s)
     
     #asking to play again
-    ag=input("\nPress \"Y\" to play again or Enter anything else to exit :")
+    ag=input("\nPress \"Y\" to play again or Enter anything else to return to main menu :")
     again=ag.upper()
     if again == "Y":
         print("\n")
@@ -256,7 +256,7 @@ def hangman():
     play(word)
     
     #asking to play again
-    while input("Press \"Y\" to play again or Enter anything else to exit :").upper() == "Y":
+    while input("Press \"Y\" to play again or Enter anything else to return to main menu :").upper() == "Y":
         word = get_word(word_list)
         play(word)
  
