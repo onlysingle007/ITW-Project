@@ -8,7 +8,6 @@ c_s=0
 p_s=0
 ch="R"
 c_ch="f"
-name="rps"
  
  
 def get_ch():
